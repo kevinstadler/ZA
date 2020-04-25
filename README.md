@@ -2,39 +2,6 @@
 
 `remap` styles and scripts for QGIS
 
-### dimensions
-
-```
-
-      W
-\^^^^^^^^^^^\
-\+----+----+\
-\|XXXX|XXXX|\
-\|XXXX|XXXX|\
-\|XXXX|XXXX|\ H
-\|XXXX|XXXX|\
-\|XXXX|XXXX|\
-\|XXXX|XXXX|\
-\^^^^^^^^^^^\
-```
-
-lengths in `mm`:
-
-    |   AZ  |   A5  | derivation
---- | ----- | ----- | ----------
-`X` |  27.5 |  23.25 |
-`\` |  13.75 | 12 |
-`W` | 247.5 |  <210 | `8*X + 2*\`
-`^` |  13   |  4.25  |
-`H` | 191   |  <148 | `6*X + 2*^`
-X label offset (X)  |    6.875 | | `\ / 2`
-Y label offset (Y)  |    6.5  | | `^ / 2`
-border thickness |   13.75 | | `max(width(\), height(^)) / 2`
-X border spacing | 233.75 | | `8 * X + border thickness`
-X border offset  |   6.875 | | `\ - border thickness / 2`
-Y border spacing | 178.75 | | `6 * X + border thickness`
-Y border offset  |   6.125 | | `^ - border thickness / 2`
-
 Grid order:
 
 * labels are *frame & annotations*
