@@ -1,0 +1,8 @@
+[map]
+center: [-4.2544, 55.86415]
+proj: epsg:7405
+scale: 9051
+magnification: 1.2
+
+[pages]
+0: 0

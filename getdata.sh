@@ -12,6 +12,7 @@ SITES=(
 	Edinburgh
 	Josefstadt
 	Erdberg
+	SantaFe
 )
 # W S E N
 BBOXES=(
@@ -26,6 +27,7 @@ BBOXES=(
 	-3.2315,55.9268,-3.1548,55.9582 # -3.4160,55.8591,-2.9879,56.0141
 	16.3221,48.2008,16.3649,48.2209
 	16.3784,48.1873,16.4218,48.2075
+	-106.0103,35.6268,-105.8964,35.7186
 )
 
 cd data
@@ -45,5 +47,13 @@ for ((i = 0; i < ${#SITES[@]}; i++)); do
 #		ogr2ogr -a_srs 'EPSG:4326' -f "SQLite" -dsco SPATIALITE=YES "${SITES[i]}.db" "${SITES[i]}.osm"
 	fi
 done
+
+# LA too large:	-118.56,33.72,-117.85,34.11
+# wget https://app.interline.io/osm_extracts/download_latest?string_id=los-angeles_california&data_format=pbf&api_token=c9a0309e-512b-48df-a3fe-a60c3b8c34dd
+#lon min: -120.7610095
+#lon max: -114.5955360
+#lat min: 32.9184260
+#lat max: 37.3920183
+# WSEN: osmconvert los-angeles_california.osm.pbf -b=-118.5782,33.6958,-117.6334,34.1618 -o=LA.osm.pbf
 
 cd ..

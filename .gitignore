@@ -1,0 +1,6 @@
+*.pdf
+*.qgs~
+*.osm
+*.pbf
+*.jpg
+db/*

@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 
 # ./layout.py -papersize 420 297 -box 27.5 -outermargin 15 data/{Moulsford,Kunming4sites,Oxford,Nunhead}.atlas
-# ./layout.py data/{Glasgow18103,Glasgow9051,Moulsford,Kunming4sites,Oxford,Nunhead,Edinburgh}.atlas
+# ./layout.py -printareasize 247.5 197 data/{Glasgow18103,Glasgow9051,Moulsford,Kunming4sites,Oxford,Nunhead,Edinburgh}.atlas
 
 import argparse
 import configparser
@@ -14,7 +14,11 @@ from math import ceil, sqrt
 from pyproj import CRS, Transformer
 from geojson import Point, Polygon, Feature, FeatureCollection, dump
 
-parser = argparse.ArgumentParser(description='Built a geojson feature file to be used as the basis of a QGIS atlas.')
+# was: 0 86, 208
+blue = [51, 51, 255]
+bluestring = ','.join(map(str, blue))
+
+parser = argparse.ArgumentParser(description='Build a geojson feature file to be used as the basis of a QGIS atlas.')
 parser.add_argument('atlas', nargs='*', default='data/Kunming.atlas', help='atlas specification file')
 parser.add_argument('--startpage', type=int, default=4, help='first page for page numbering')
 parser.add_argument('-o', default='atlas.geojson', help='output filename')
@@ -24,7 +28,7 @@ parser.add_argument('-box', type=float, default=27.5, help='in mm')
 parser.add_argument('-papersize', type=float, nargs=2, default=(297, 210), metavar=('width', 'height'), help='in mm')
 parser.add_argument('-printareasize', type=float, nargs=2, default=(247.5, 191), metavar=('width', 'height'), help='in mm')
 parser.add_argument('-dpi', type=int, default=600)
-parser.add_argument('-bleed', type=float, default=0, help='in mm') # TODO make 10 instead, add to 
+parser.add_argument('-bleed', type=float, default=0, help='in mm') # TODO make 10 instead, add to printareasize
 parser.add_argument('-outermargin', type=float, default=None, help='instead of specifying the printarea, give some margin (in mm)')
 args = parser.parse_args()
 
@@ -170,7 +174,7 @@ def getmaplayout(atlasfile, outermapoffset):
       <lineStyle>
         <symbol name="" force_rhr="0" clip_to_extent="1" alpha="1" type="line">
           <layer locked="0" class="SimpleLine" pass="0" enabled="1">
-            <prop v="0,86,208,255" k="line_color"/>
+            <prop v="''' + bluestring + ''',255" k="line_color"/>
             <prop v="solid" k="line_style"/>
             <prop v="0.15" k="line_width"/><!-- TODO find right line width: 3 too wide, 1 too narrow -->
             <prop v="MM" k="line_width_unit"/>
@@ -180,13 +184,14 @@ def getmaplayout(atlasfile, outermapoffset):
 
   # was: 2.7 outside for bg, 5.5 outside for label (label should be 2.4-2.6ish more)
   labelbgexpression = "if(@grid_number &gt; " + str(mapmargins[0]) + " AND @grid_number &lt; if(@grid_axis = 'x', " + ','.join(map(lambda n, m: str(args.box * n + m), nboxes, mapmargins)) + "),  'l', '')"
-  labelbgoptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="0,86,208,255" frameAnnotationDistance="' + str(mapmargins[0] - 10) + '" annotationFormat="8" annotationExpression="' + labelbgexpression + '"'
+  lrlabelbgoptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="' + bluestring + ',255" frameAnnotationDistance="' + str(mapmargins[0] - 10) + '" annotationFormat="8" annotationExpression="' + labelbgexpression + '"'
+  tblabelbgoptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="' + bluestring + ',255" frameAnnotationDistance="' + str(mapmargins[1] - 10) + '" annotationFormat="8" annotationExpression="' + labelbgexpression + '"'
   labelbgspec = '<annotationFontProperties description="Wingdings,30,-1,5,50,0,0,0,0,0,Regular" style="Regular"/>'
 
   labelindices = list(map(lambda m: 'round((@grid_number - ' + str(m) + ') / ' + str(args.box) + ')', mapmargins))
   labelexpression = "if(@grid_number &lt; " + str(mapmargins[0]) + ", '', if(@grid_axis = 'x', if(@grid_number &lt; " + str(args.box * nboxes[0] + mapmargins[0]) + ", char(64 + " + labelindices[0] + "), ''), if(@grid_number &lt; " + str(args.box * nboxes[1] + mapmargins[1]) + ", " + str(nboxes[1] + 1) + " - " + labelindices[1] + ", '')))"
-  lrlabeloptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="255,255,255,255" frameAnnotationDistance="' + str(mapmargins[0] - 7.0) + '" annotationFormat="8" annotationExpression="' + labelexpression + '"'
-  tblabeloptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="255,255,255,255" frameAnnotationDistance="' + str(mapmargins[0] - 7.6) + '" annotationFormat="8" annotationExpression="' + labelexpression + '"'
+  lrlabeloptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="255,255,255,255" frameAnnotationDistance="' + str(mapmargins[0] - 7.3) + '" annotationFormat="8" annotationExpression="' + labelexpression + '"'
+  tblabeloptions = 'uuid="{' + getid() + '}" gridStyle="3" showAnnotation="1" annotationFontColor="255,255,255,255" frameAnnotationDistance="' + str(mapmargins[1] - 7.5) + '" annotationFormat="8" annotationExpression="' + labelexpression + '"'
   labelspec = '<annotationFontProperties description="Al Bayan,10,-1,5,75,0,0,0,0,0,Bold" style="Bold"/>'
 
   yellowborderoptions = 'uuid="{' + getid() + '}" blendMode="16"'
@@ -214,7 +219,9 @@ def getmaplayout(atlasfile, outermapoffset):
       if grids:
         grids = getgrid(layoutname + ' blue grid', [args.box, args.box], [0, 0] if inner else mapmargins, bluegridoptions, bluegridspec)
         labeloffset = list(map(lambda m: m + args.box / 2, mapmargins))
-        grids += getgrid(layoutname + ' label backgrounds', [args.box, args.box], labeloffset, labelbgoptions, labelbgspec, True)
+#        grids += getgrid(layoutname + ' label backgrounds', [args.box, args.box], labeloffset, labelbgoptions, labelbgspec, True)
+        grids += getgrid(layoutname + ' labels backgrounds LR', [args.box, args.box], labeloffset, lrlabelbgoptions, labelbgspec, True, ['top', 'bottom'])
+        grids += getgrid(layoutname + ' labels backgrounds TB', [args.box, args.box], labeloffset, tblabelbgoptions, labelbgspec, True, ['left', 'right'])
         grids += getgrid(layoutname + ' labels LR', [args.box, args.box], labeloffset, lrlabeloptions, labelspec, True, ['top', 'bottom'])
         grids += getgrid(layoutname + ' labels TB', [args.box, args.box], labeloffset, tblabeloptions, labelspec, True, ['left', 'right'])
       else:
@@ -223,15 +230,20 @@ def getmaplayout(atlasfile, outermapoffset):
     # use scale and crs to calculate extent
     extent = list(map(lambda center, size: [str(center - size / 2), str(center + size / 2)], crscenter, scaledinnermapsize if inner else scaledtotalmapsize))
 
-    backgroundblue = 255 if inner else 170
     # mapflags: allow cut off labels (1) for outer map ('labels'), but not inner (region/boundary labels)
     #  background="''' + str(False if labels else True) + '''"
     # to_proj4() gives a warning, but at least it works (unlike to_wkt() for SE Asia, BNG)
     proj4 = crs.to_proj4()
-    return '''
-    <LayoutItem size="''' + size + ''',mm" mapFlags="''' + str(0 if inner else 1) + '''" blendMode="''' + str(5 if inner else 0) + '''" followPreset="true" position="''' + offset + ''',mm" zValue="''' + str(zindex) + '''" positionOnPage="''' + offset + ''',mm" outlineWidthM="13,mm" type="65639" followPresetName="''' + theme + '''" visibility="1" id="''' + name + '''">
-      <BackgroundColor red="255" green="255" blue="''' + str(backgroundblue) + '''" alpha="255" />
-      <Extent xmin="''' + extent[0][0] + '''" xmax="''' + extent[0][1] + '''" ymin="''' + extent[1][0] + '''" ymax="''' + extent[1][1] + '''"/>
+
+#    backgroundblue = 255 if inner else 170
+#      <BackgroundColor red="255" green="255" blue="''' + str(backgroundblue) + '''" alpha="255" />
+    customproperties = ''
+    if 'magnification' in config['map']:
+      customproperties = '<LayoutObject><customproperties><property key="variableNames" value="baseline_scale"/><property key="variableValues" value="' + str(round(20000 / config['map'].getfloat('magnification'))) + '"/></customproperties></LayoutObject>'
+
+    return ('''<LayoutItem size="''' + size + ''',mm" mapFlags="''' + str(0 if inner else 1) + '''" blendMode="''' + str(5 if inner else 0) + '''" followPreset="true" position="''' + offset + ''',mm" zValue="''' + str(zindex) + '''" positionOnPage="''' + offset + ''',mm" outlineWidthM="13,mm" type="65639" followPresetName="''' + theme + '''" visibility="1" id="''' + name + '''">''' +
+      customproperties +
+      '''<Extent xmin="''' + extent[0][0] + '''" xmax="''' + extent[0][1] + '''" ymin="''' + extent[1][0] + '''" ymax="''' + extent[1][1] + '''"/>
       <crs>
         <spatialrefsys>
           <proj4>''' + proj4 + '''</proj4>
@@ -240,7 +252,7 @@ def getmaplayout(atlasfile, outermapoffset):
       ''' + grids + '''
       <AtlasMap margin="0" scalingMode="0" atlasDriven="1"/>
       <labelBlockingItems/>
-    </LayoutItem>'''
+    </LayoutItem>''')
 
   print(getmap(False, 'blank', 2, True))
   print(getmap(True, 'coloring', 1))
