@@ -24,16 +24,40 @@ parser.add_argument('--startpage', type=int, default=4, help='first page for pag
 parser.add_argument('-o', default='atlas.geojson', help='output filename')
 
 parser.add_argument('-box', type=float, default=27.5, help='in mm')
+parser.add_argument('--no-border', default=False, action='store_true', help='omit yellow border outside box (overridden by atlas config "border: true/false")')
+parser.add_argument('--no-grid', default=False, action='store_true', help='omit blue grid around boxes (overridden by atlas config "grid: true/false")')
 #parser.add_argument('-y', type=float, default=0, help='global y offset (for spreading pages)')
-parser.add_argument('-papersize', type=float, nargs=2, default=(297, 210), metavar=('width', 'height'), help='in mm')
-parser.add_argument('-printareasize', type=float, nargs=2, default=(247.5, 191), metavar=('width', 'height'), help='in mm')
-parser.add_argument('-dpi', type=int, default=600)
+parser.add_argument('-papersize', type=float, nargs=2, default=(297, 210), metavar=('width', 'height'), help='in mm (overridden by atlas config "papersize:")')
+parser.add_argument('-printareasize', type=float, nargs=2, default=(247.5, 191), metavar=('width', 'height'), help='in mm (overridden by atlas config "printsize:")')
+parser.add_argument('-dpi', type=int, default=300, help='layout export resolution (overridden by atlas config "dpi:")')
 parser.add_argument('-bleed', type=float, default=0, help='in mm') # TODO make 10 instead, add to printareasize
 parser.add_argument('-outermargin', type=float, default=None, help='instead of specifying the printarea, give some margin (in mm)')
 args = parser.parse_args()
 
 nmaps = len(args.atlas)
 atlasbooklet = nmaps == 1
+
+# FIXME might have to NOT reuse this one?
+config = configparser.ConfigParser(converters={'numbers': lambda value: [float(num) for num in value.strip('[]').split(',')] })
+print(args)
+
+# if only 1 atlas file, read papersize, printareasize and other global options from atlas
+if atlasbooklet:
+  print("overwriting available args from atlas booklet....")
+  config.read(args.atlas[0])
+  if config.has_option('map', 'papersize'):
+    args.papersize = config.getnumbers('map', 'papersize')
+    if config.has_option('map', 'printareasize'):
+      args.printareasize = config.getnumbers('map', 'printareasize')
+    else:
+      args.printareasize = args.papersize
+
+  if config.has_option('map', 'dpi'):
+    args.dpi = config.getint('map', 'dpi')
+  if config.has_option('map', 'border'):
+    args.no_border = not config.getboolean('map', 'border')
+  if config.has_option('map', 'grid'):
+    args.no_grid = not config.getboolean('map', 'grid')
 
 mapsperaxis = [1, 1]
 #if False:
@@ -85,11 +109,8 @@ yellowframeinterval = list(map(lambda d, o: d - 2*o, desiredmapsize, yellowborde
 # label backgrounds and labels both shown OUTSIDE frame with distance ?mm to map frame
 # label backgrounds and labels interval is x, offset is totalmargins + x/2
 
-def getmaplayout(atlasfile, outermapoffset):
-  layoutname = os.path.basename(atlasfile).split('.')[0]
+def getmaplayout(layoutname, config, outermapoffset):
 
-  config = configparser.ConfigParser()
-  config.read(atlasfile)
   crs = CRS.from_user_input(config['map']['proj'])
   wgs = CRS.from_epsg(4326)
 
@@ -97,10 +118,10 @@ def getmaplayout(atlasfile, outermapoffset):
   fromwgs = Transformer.from_crs(wgs, crs, always_xy=True)
   towgs = Transformer.from_crs(crs, wgs, always_xy=True)
 
-  center = ast.literal_eval(config['map']['center'])
+  center = config.getnumbers('map', 'center')
   crscenter = fromwgs.transform(center[0], center[1])
 
-  scale = float(config['map']['scale'])
+  scale = config.getfloat('map', 'scale')
   # TODO merge both argument specs by calling defaultsdict.update(overridedict)?
 
   scaledinnermapsize = list(map(lambda d: d * scale / 1000, innermapsize))
@@ -213,19 +234,18 @@ def getmaplayout(atlasfile, outermapoffset):
     size = innermapsizespec if inner else outermapsizespec
     offset = innermapoffsetspec if inner else outermapoffsetspec
 
-    if inner:
-      grids = ''
-    else:
-      if grids:
-        grids = getgrid(layoutname + ' blue grid', [args.box, args.box], [0, 0] if inner else mapmargins, bluegridoptions, bluegridspec)
+    gridspec = ''
+    if not inner:
+      if grids and not args.no_grid:
+        gridspec = getgrid(layoutname + ' blue grid', [args.box, args.box], [0, 0] if inner else mapmargins, bluegridoptions, bluegridspec)
         labeloffset = list(map(lambda m: m + args.box / 2, mapmargins))
-#        grids += getgrid(layoutname + ' label backgrounds', [args.box, args.box], labeloffset, labelbgoptions, labelbgspec, True)
-        grids += getgrid(layoutname + ' labels backgrounds LR', [args.box, args.box], labeloffset, lrlabelbgoptions, labelbgspec, True, ['top', 'bottom'])
-        grids += getgrid(layoutname + ' labels backgrounds TB', [args.box, args.box], labeloffset, tblabelbgoptions, labelbgspec, True, ['left', 'right'])
-        grids += getgrid(layoutname + ' labels LR', [args.box, args.box], labeloffset, lrlabeloptions, labelspec, True, ['top', 'bottom'])
-        grids += getgrid(layoutname + ' labels TB', [args.box, args.box], labeloffset, tblabeloptions, labelspec, True, ['left', 'right'])
-      else:
-        grids = getgrid(layoutname + ' yellow border', yellowframeinterval, yellowborderoffset, yellowborderoptions, yellowborderspec)
+#        gridspec += getgrid(layoutname + ' label backgrounds', [args.box, args.box], labeloffset, labelbgoptions, labelbgspec, True)
+        gridspec += getgrid(layoutname + ' labels backgrounds LR', [args.box, args.box], labeloffset, lrlabelbgoptions, labelbgspec, True, ['top', 'bottom'])
+        gridspec += getgrid(layoutname + ' labels backgrounds TB', [args.box, args.box], labeloffset, tblabelbgoptions, labelbgspec, True, ['left', 'right'])
+        gridspec += getgrid(layoutname + ' labels LR', [args.box, args.box], labeloffset, lrlabeloptions, labelspec, True, ['top', 'bottom'])
+        gridspec += getgrid(layoutname + ' labels TB', [args.box, args.box], labeloffset, tblabeloptions, labelspec, True, ['left', 'right'])
+      elif not grids and not args.no_border:
+        gridspec += getgrid(layoutname + ' yellow border', yellowframeinterval, yellowborderoffset, yellowborderoptions, yellowborderspec)
 
     # use scale and crs to calculate extent
     extent = list(map(lambda center, size: [str(center - size / 2), str(center + size / 2)], crscenter, scaledinnermapsize if inner else scaledtotalmapsize))
@@ -249,7 +269,7 @@ def getmaplayout(atlasfile, outermapoffset):
           <proj4>''' + proj4 + '''</proj4>
         </spatialrefsys>
       </crs>
-      ''' + grids + '''
+      ''' + gridspec + '''
       <AtlasMap margin="0" scalingMode="0" atlasDriven="1"/>
       <labelBlockingItems/>
     </LayoutItem>''')
@@ -300,7 +320,10 @@ for i in range(len(args.atlas)):
     outermapoffset = list(map(lambda m, o, s: m + o * s, outermargins, offsets, outermapsize))
   else:
     outermapoffset = (outermargins[0], i * (args.papersize[1] + 10) + outermargins[1])
-  bookmarks += getmaplayout(args.atlas[i], outermapoffset)
+
+  layoutname = os.path.basename(args.atlas[i]).split('.')[0]
+  config.read(args.atlas[i])
+  bookmarks += getmaplayout(layoutname, config, outermapoffset)
 
 if atlasbooklet:
   print('''

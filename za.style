@@ -24,11 +24,13 @@ node,way   admin_level  text         linear
 node,way   bridge       text         linear
 node,way   building     text         polygon
 way         building:part           text    polygon,nocolumn
+way		construction	text	linear
 node,way	covered	text	linear
 node,way   emergency     text         polygon
 node,way    harbour                 text    polygon,nocolumn
 node,way   highway      text         linear
 node,way   historic     text         polygon
+node,way   junction     text         linear
 node,way   landuse      text         polygon
 node,way   layer        int4         linear
 node,way    leisure                 text    polygon
@@ -44,9 +46,9 @@ node,way   power_source text         linear
 node,way   public_transport text     polygon
 node,way   railway      text         linear
 node,way   ref          text         linear
-node,way	religion	text	linear
+node,way	religion	text	polygon
 node,way   service      text         linear
-way	shop	text		polygon
+node,way	shop	text		polygon
 node,way    sport                   text    polygon,nocolumn
 node,way   station      text         linear
 node,way   tourism      text         polygon
@@ -54,7 +56,7 @@ node,way   tunnel       text         linear
 node,way   water        text         polygon
 node,way   waterway     text         polygon
 node,way   wetland      text         polygon
-way	width	text		linear
+node,way	width	text		linear
 node,way   wood         text         linear
 node,way    z_order                 int4    linear  # This is calculated during import
 #way         way_area                real    linear  # This is calculated during import

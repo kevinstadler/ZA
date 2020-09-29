@@ -4,7 +4,7 @@ if [ -d db ]; then
 	exit 1
 fi
 initdb ./db -E utf8
-pg_ctl -D db start
+pg_ctl -D db start > /dev/null
 
 DBNAME=za
 createdb $DBNAME && psql -d $DBNAME -c 'CREATE EXTENSION postgis; CREATE EXTENSION hstore;'
