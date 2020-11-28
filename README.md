@@ -57,4 +57,6 @@ for future booklet production:
 3. create composite SVG using `feBlend` spec
 4. render to raster?
 
-prepare for print? https://unix.stackexchange.com/questions/405610/how-can-i-split-each-pdf-page-into-two-pages-using-the-command-line
+## TODOs/FIXMEs
+
+* add support for *map rotation* (requires funny center points for atlas)

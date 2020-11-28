@@ -155,8 +155,9 @@ try:
     "UPDATE _line hw SET singlynamed = false WHERE hw.singlynamed AND (SELECT COUNT(*) FROM _line WHERE singlynamed AND name = hw.name) > 1;")
 
   # TODO actually create an "amenities" view which has a union of points + polygon centroids for railway=station and the relevant amenities to be rendered
-  execute("Copying railway=station polygons over to _points table...",
-    f"INSERT INTO _point SELECT {cols}, ST_Centroid(way) AS way FROM _polygon WHERE railway = 'station'")
+  # FIXME this is broken, something about no. of columns?
+#  execute("Copying railway=station polygons over to _points table...",
+#    f"INSERT INTO _point SELECT {cols}, ST_Centroid(way) AS way FROM _polygon WHERE railway = 'station'")
 
   execute("Capitalising names of large train_stations",
     "UPDATE _point station SET name = UPPER(station.name) FROM _polygon bldg WHERE bldg.building = 'train_station' AND (station.public_transport = 'station' OR station.railway = 'station') AND bldg.name = station.name AND ST_Within(station.way, bldg.way) AND bldg.area > 10000;")
