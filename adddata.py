@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser(description='Add (and post-process) data to an 
 parser.add_argument('--db', default='za')
 parser.add_argument('--style', default='za.style')
 parser.add_argument('--simplify', type=float, default=4.0)
+parser.add_argument('--simplify2', type=float, default=3000.0, help='simplification tolerance for the simplified2 column (VW)') # was already up to 5000, only small changes there
 parser.add_argument('--bbox', nargs='*', help='bounding box in "minlon minlat maxlon maxlat" (WSEN) order (provide four bbox arguments for every osmfile)')
 parser.add_argument('--minarea', type=int, default=16, help='polygons with an area < this will be dropped')
 parser.add_argument('osmfile', nargs='*')
@@ -95,6 +96,9 @@ try:
   #proj = "'+proj=gnom +lat_0=' || ST_Y(ST_Centroid(way)) || ' +lon_0=' || ST_X(ST_Centroid(way)) || ' +datum=WGS84 +units=m +no_defs'"
   execute(f"Simplifying {getcount('_polygon WHERE simplified IS NULL')} polygons (tolerance={args.simplify}m)...",
     f"UPDATE _polygon SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, {proj}), {args.simplify}), {proj}, 4326) WHERE simplified IS NULL;")
+  execute(f"Simplifying {getcount('_polygon WHERE simplified2 IS NULL')} polygons for overview (tolerance={args.simplify2}m)...",
+    f"UPDATE _polygon SET simplified2 = ST_Transform(ST_ChaikinSmoothing(ST_SimplifyVW(ST_Transform(way, {proj}), {args.simplify2})), {proj}, 4326) WHERE (aeroway IS NOT NULL OR landuse IS NOT NULL OR 'natural' IS NOT NULL OR water IS NOT NULL);") # TODO REPLACE CONDITION AND simplified2 IS NULL;")
+  print(foo)
 #  cur.execute("UPDATE _polygon SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, $PROJ), $TOLERANCE), $PROJ, 4326), simplified2 = ST_Transform(ST_SimplifyVW(ST_Transform(way, $PROJ), $TOLERANCE), $PROJ, 4326) WHERE simplified IS NULL;")
   execute(f"Simplifying {getcount('_line WHERE simplified IS NULL')} ways (tolerance={args.simplify}m)...",
     f"UPDATE _line SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, {proj}), {args.simplify}), {proj}, 4326) WHERE simplified IS NULL;")
