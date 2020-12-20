@@ -18,7 +18,7 @@ mutool merge -o tmp.pdf empty.pdf tmp.pdf
 # 3. make booklet with no auto scale and add inner margin
 pdfjam --noautoscale true --paper a5paper --twoside --offset '.5cm 0cm 0cm 0cm' tmp.pdf # output 148x210
 
-# this one uses auto scale...
+# this one uses auto scale if we use the default mode which zooms, but can avoid this with --no-crop
 pdfbook2 --no-crop --paper=a4paper tmp-pdfjam.pdf
 open tmp-pdfjam-book.pdf
 

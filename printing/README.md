@@ -7,6 +7,8 @@ effective page size is (123.75+4mm = 127.8mm * 191mm) = .0244sqm per page
 Glasgow has 256 pages = 128 printed A5 leaves + 2x cardboard A5 + glue, weighs 269g
 * A5 area = .03108*128 = 3.978sqm paper + .06126+ sqm cardboard // 269g / 4sqm = 67g/sqm
 * exact area = .0244*128 = 3.12sqm paper + .05 sqm cardboard // 269g / 3.2sqm = 84g/sqm
+<!-- Siang paper: 100xA4 = .297*.210 * 100: 60G: 274G, 70G: 436G, 80G: 499g -->
+<!-- 100 page bag was 455g, 30 pages was 135g, so paper I bought is JUST OVER 70G! -->
 
 ## map page layout (excluding 4-5mm gutter for binding)
 
@@ -17,6 +19,8 @@ Glasgow has 256 pages = 128 printed A5 leaves + 2x cardboard A5 + glue, weighs 2
 * page number labels are 7mm tall rectangles, width depends on size of number (max is 9.5mm). inner side is aligned with map but 2mm above the top, so the center is 5.5mm above the top
 * neighbour page links are 2.5mm from map border, 3mm tall and 6.5mm wide (NO MATTER SIZE LABEL), text is rotated outwards
 * 2.5mm gap -- 3mm box -- 1mm gap -- 2.5mm triangle (same 6.5mm base max)
+
+CP1515N print margin is .14in = 3.6mm
 
 ## cover leaf
 
@@ -29,7 +33,7 @@ via https://www.myfonts.com/WhatTheFont/
 
 * blue title+subtitles (perfectly vertical edges of round characters like G and O)
   * SG Europa Grotesk SH Bold Condensed
-  * Helvatica Black Condensed: http://fonts3.com/fonts/h/Helvetica-Condensed-Black.html
+  * Helvetica Black Condensed: http://fonts3.com/fonts/h/Helvetica-Condensed-Black.html
   * Antarctican Headline Bold
 * regular town listing (old Manchester): https://fontsgeek.com/fonts/Industrial-Gothic-Banner-Std-Regular (write all lower caps!)
 * italics town listing: no luck
@@ -71,6 +75,9 @@ possible improvement: only add blue grid afterwards (to avoid cutting right on i
 | icon: red | 255,0,0 | |
 | icon: blue | 29,0,142 | |
 | text: blue | ~60,0,220 | |
+
+* saturation of buildings and roads 100% (except locked areas 38%)
+* saturation of greenspace/builtup ~ 90%, water 86%
 
 * https://www.nationalgeographic.com/content/dam/news/2017/06/22/london-map-blog-post/01-london-maps-charing-cross.adapt.1900.1.jpg
 * https://www.nationalgeographic.com/content/dam/news/2017/06/22/london-map-blog-post/03-london-maps-birmingham.adapt.352.1.jpg
