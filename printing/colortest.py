@@ -5,6 +5,16 @@
 # more FINE GRAINED test for builtup, primary (centered around 40 hue), green, yellow border+overview bg in one, blue, commercial, leisure
 #./colortest.py -outfile detailedhues.pdf -d 4 10 5 -- '#ffd599' '#ffb828' '#dfe8a7' '#fff5c9' '#3385d6' '#9f83b5' '#ba8550'
 
+# front page colors
+# blue: 230deg, 100%, 100%
+# red: 5deg, 90%, 100%
+# background light blue: 220deg, 20% saturation, 100% value
+# saturation diff only 15, not 20
+#./colortest.py -paper a4 -landscape -outfile front.pdf -d 5 15 5 -- '#002AFF' '#FF2D19' '#CCDDFF'
+
+# yellow only
+#./colortest.py -paper a4 -landscape -outfile yellow.pdf -n 2 7 1 -d 3 5 2 -- '#fffcb3'
+
 #yellowborder: '#ffffc3'
 # poi can be done thorugh pedestrian
 # healthcare can be done through greenspace
@@ -45,6 +55,7 @@ class MakeThreeAction(argparse.Action):
 parser = argparse.ArgumentParser(description='generate boxes of similar colors')
 
 parser.add_argument('-paper', default='a4', help='papersize to n-up all created cards to')
+parser.add_argument('-landscape', default=False, action='store_true')
 parser.add_argument('-margin', default='1cm', help='non-printable margin (any parseable length specification)')
 
 #colorspaces = ['sRGB', 'HSL', 'HSV', 'CMYK']
@@ -114,17 +125,20 @@ d2neighbours = [[getneighbours(col, dimorder[1]) for col in sublist] for sublist
 d3neighbours = [[[getneighbours(col, dimorder[2]) for col in sublist] for sublist in mainlist] for mainlist in d2neighbours]
 
 # boxes along the x axis = 1st dimension * (2nd dimension + 1 for spacing) - 1
-nx = (len(d3neighbours[0]) + 1) * len(d3neighbours[0][0]) - 1
+nx = (len(d3neighbours[0][0]) + 1) * len(d3neighbours[0][0][0]) - 1
 # boxes along the y axis = ncolors * (3rd dimension + 1 for spacing) - 1
-ny = (len(d3neighbours[0][0][0]) + 1) * len(colors) - 1
+ny = (len(d3neighbours[0]) + 1) * len(colors) - 1
 
 # all in pt
 size = papersize.parse_papersize(args.paper)
+if args.landscape:
+  size = papersize.rotate(size, papersize.LANDSCAPE)
 margin = papersize.parse_length(args.margin)
 
 printsize = [s - 2*margin for s in size]
 boxwidth = printsize[0] / nx
 boxheight = printsize[1] / ny
+print(f'{nx}x{ny} fits {boxwidth}x{boxheight}')
 
 boxwidth = min(boxwidth, boxheight)
 boxheight = min(boxwidth, boxheight)
@@ -154,7 +168,7 @@ def drawbox(col, xoffset, yoffset):
   return ' '.join(str(x) for x in col.rgb) + ' setrgbcolor ' + str(margin + xoffset * boxwidth) + ' ' + str(margin + yoffset * boxheight) + ' ' + str(boxwidth)+ ' ' + str(boxheight) + ' rectfill '
 
 def drawlabel(text, xoffset, yoffset):
-  return ' 0 setgray ' + str(margin + xoffset * boxwidth + 3) + ' ' + str(margin + yoffset * boxheight + 5) + ' moveto (' + str(round(255*text)) + ') show '
+  return ' 0 setgray ' + str(margin + xoffset * boxwidth + 12) + ' ' + str(margin + yoffset * boxheight + 5) + ' moveto (' + str(round(255*text)) + ') show '
 
 postscript = '/Times 10 selectfont '
 x = 0
@@ -175,16 +189,16 @@ for color in d3neighbours:
         # add blank column
       x = x+1
     # write saturation levels (td)
-    postscript += drawlabel(hsltohsv(d3[0][0].hsl)[1] if args.hsv else d3[0][0].hsl[dimorder[0]], -1, y)
+    postscript += drawlabel((hsltohsv(d3[0][0].hsl)[1] if args.hsv else d3[0][0].hsl[dimorder[0]])*100/255, -1, y)
     y = y+1
   # hue *extremes* only (lr-boxes)
   postscript += drawlabel(d3[0][0].hsl[dimorder[1]]*360/255, args.n[dimorder[1]], y)
-  postscript += drawlabel(d3[4][0].hsl[dimorder[1]]*360/255, args.n[dimorder[1]] + 2*args.n[dimorder[0]]*(2+2*args.n[dimorder[1]]), y)
+  postscript += drawlabel(d3[4][0].hsl[dimorder[1]]*360/255, args.n[dimorder[1]] + 2*args.n[dimorder[2]]*(2+2*args.n[dimorder[1]]), y)
   # value *extremes* only (lr)
   mn = hsltohsv(d3[0][0].hsl)[2] if args.hsv else d3[0][0].hsl[dimorder[2]]
-  mx = hsltohsv(d3[0][4].hsl)[2] if args.hsv else d3[0][4].hsl[dimorder[2]]
-  postscript += drawlabel(mn, args.n[dimorder[2]] + args.n[dimorder[0]]*(2+2*args.n[dimorder[1]]) - 2, y)
-  postscript += drawlabel(mx, args.n[dimorder[2]] + args.n[dimorder[0]]*(2+2*args.n[dimorder[1]]) + 2, y)
+  mx = hsltohsv(d3[0][2 * args.n[2]].hsl)[2] if args.hsv else d3[0][2 * args.n[2]].hsl[dimorder[2]]
+  postscript += drawlabel(mn*100/255, args.n[dimorder[2]] + args.n[dimorder[2]]*(2+2*args.n[dimorder[1]]) - 2, y)
+  postscript += drawlabel(mx*100/255, args.n[dimorder[2]] + args.n[dimorder[2]]*(2+2*args.n[dimorder[1]]) + 2, y)
   # add blank line
   y = y+1
 
@@ -217,10 +231,10 @@ def isnamedsize(spec):
     papersize.parse_papersize(spec)
     return True
 
-if isnamedsize(args.paper):
-  gsspec = '-sPAPERSIZE=' + args.paper
-else:
-  gsspec = '-dDEVICEWIDTHPOINTS=' + str(round(size[0])) + ' -dDEVICEHEIGHTPOINTS=' + str(round(size[1]))
+#if isnamedsize(args.paper):
+#  gsspec = '-sPAPERSIZE=' + args.paper
+#else:
+gsspec = '-dDEVICEWIDTHPOINTS=' + str(round(size[0])) + ' -dDEVICEHEIGHTPOINTS=' + str(round(size[1]))
 
 #print(postscript)
 

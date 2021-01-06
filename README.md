@@ -21,7 +21,13 @@ Leaving the `baseline_scale` at its default produces consistent rendering of ind
 * if `map_scale > baseline_scale`, then the rendering of line features is relatively *bigger*, so the spacing between them is *decreased*, leading to *more overlap*. (This is what happens when the `map_scale` is *increased* without compensating for it.)
 * if `map_scale = baseline_scale`, then the relative spacing of features remains intact. Therefore, *if a 'magnified' rendition of the originally spaced map is desired, the `map_scale` and `baseline_scale` should be changed in unison*: a 4x magnified version of the default map will have a `baseline_scale` of 80.000 (for 4x as large feature renditions) renderred at a map scale of 1:80.000 (to take up 4x the amount of space). A magnified version of the (more spacious) 1:10.000 map can be achieved by increasing both scales at the same factor, i.e. the same `baseline_scale` of 80.000 used together with a 1:40.000 map.
 
-<!-- Changing the map resolution without changing the `baseline_scale` therefore changes  -->
+<!-- Changing the map resolution without changing the `baseline_scale` therefore changes
+
+## Overview scaling
+
+GGW is 1:18,103 (5.52cm to 1km)
+Overview is (2.68cm to 7cm = .383cm to 1km) ~ 15x the other baseline ~ 1:270000 -- actually can make this DYNAMIC
+-->
 
 ### generate atlas (processed by `layout.py`)
 

@@ -14,7 +14,6 @@
    viewBox="0 0 80 50"
    version="1.1"
    id="svg8"
-   sodipodi:docname="British_Rail_-_colour_reversed_logo.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <defs
      id="defs2" />
@@ -77,17 +76,17 @@
      id="layer1"
      transform="translate(0,-247)">
     <rect
-       style="opacity:1;fill:param(fill) #000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       style="opacity:1;fill: #000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
        id="rect5152"
        width="80"
        height="50.000099"
        x="1.0991208e-14"
-       y="246.99989" />
+       y="246.99989" /><!-- param(fill) -->
     <path
-       style="opacity:1;fill:param(outline) #fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="opacity:1;fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:param(outline-width);stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 71.666665,261.99972 1.43e-4,5.83338 H 54.583332 l -16.666668,8.3334 h 33.750144 l -1.43e-4,5.83338 H 37.916664 l 22.083456,9.16674 H 45.000089 L 25.416666,281.99997 H 8.3333496 V 276.1665 H 25.416666 l 16.666667,-8.3334 H 8.3333496 l -1.69e-5,-5.83317 33.7500003,-2.1e-4 -22.083293,-9.16674 h 15.00003 l 19.583262,9.16695 z"
        id="path4275"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccccccc" /><!-- param(outline) -->
   </g>
 </svg>

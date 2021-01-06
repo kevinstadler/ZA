@@ -98,7 +98,6 @@ try:
     f"UPDATE _polygon SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, {proj}), {args.simplify}), {proj}, 4326) WHERE simplified IS NULL;")
   execute(f"Simplifying {getcount('_polygon WHERE simplified2 IS NULL')} polygons for overview (tolerance={args.simplify2}m)...",
     f"UPDATE _polygon SET simplified2 = ST_Transform(ST_ChaikinSmoothing(ST_SimplifyVW(ST_Transform(way, {proj}), {args.simplify2})), {proj}, 4326) WHERE (aeroway IS NOT NULL OR landuse IS NOT NULL OR 'natural' IS NOT NULL OR water IS NOT NULL);") # TODO REPLACE CONDITION AND simplified2 IS NULL;")
-  print(foo)
 #  cur.execute("UPDATE _polygon SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, $PROJ), $TOLERANCE), $PROJ, 4326), simplified2 = ST_Transform(ST_SimplifyVW(ST_Transform(way, $PROJ), $TOLERANCE), $PROJ, 4326) WHERE simplified IS NULL;")
   execute(f"Simplifying {getcount('_line WHERE simplified IS NULL')} ways (tolerance={args.simplify}m)...",
     f"UPDATE _line SET simplified = ST_Transform(ST_SimplifyPreserveTopology(ST_Transform(way, {proj}), {args.simplify}), {proj}, 4326) WHERE simplified IS NULL;")
@@ -110,14 +109,14 @@ try:
     UPDATE _line SET tunnel = NULL WHERE tunnel = 'no';""")
 
   genericbuilding = "('yes', 'public', 'roof', 'service')"
-  AMENITY = "('hospital', 'school', 'college', 'university', 'arts_centre', 'bus_station')"
-  LANDUSE = "('depot', 'industrial', 'railway')"
+  AMENITY = "('hospital', 'school', 'college', 'university', 'arts_centre', 'bus_station', 'place_of_worship')"
+  LANDUSE = "('depot', 'industrial', 'railway', 'retail')" # TODO also do with 'commercial' or 'retail'?
   LEISURE = "('sports_centre')"
   #containsspatially = "ST_Covers(grounds.way, bldg.way)"
   containsspatially = "ST_Within(ST_Centroid(bldg.way), grounds.way)"
   execute("Marking any underspecified buildings on amenity (school, hospital,...) grounds as buildings of that type, and removing names of buildings contained in areas of the same name...",
-    f"""UPDATE _polygon SET building = NULL WHERE building = 'no';
-    UPDATE _polygon SET building = amenity WHERE building in {genericbuilding} AND amenity IS NOT NULL;
+#    f"""UPDATE _polygon SET building = NULL WHERE building = 'no';
+    f"""UPDATE _polygon SET building = amenity WHERE building in {genericbuilding} AND amenity IS NOT NULL;
     UPDATE _polygon SET building = tourism WHERE building in {genericbuilding} AND tourism IS NOT NULL;
     UPDATE _polygon SET building = 'commercial' WHERE building IN {genericbuilding} AND shop IS NOT NULL;
     UPDATE _polygon bldg SET building = grounds.amenity FROM _polygon grounds WHERE bldg.building IN {genericbuilding} AND bldg.leisure IS NULL AND grounds.building IS NULL AND grounds.amenity IN {AMENITY} AND {containsspatially};

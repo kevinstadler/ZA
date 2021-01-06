@@ -10,17 +10,29 @@
 
 # 1. original file needs to be 1cm too narrow
 # 2. split
+echo "Splitting pages through the middle..."
 mutool poster -x 2 "$1" tmp.pdf
 mutool merge -o tmp.pdf empty.pdf tmp.pdf
 #pdf180 tmp.pdf
 #mv tmp-rotated180.pdf tmp.pdf
 
 # 3. make booklet with no auto scale and add inner margin
-pdfjam --noautoscale true --paper a5paper --twoside --offset '.5cm 0cm 0cm 0cm' tmp.pdf # output 148x210
+echo "Adding binding margin..."
+# TODO test if -o works
+pdfjam -q --noautoscale true --paper a5paper --twoside --offset '.5cm 0cm 0cm 0cm' -o tmp.pdf tmp.pdf # output 148x210
 
 # this one uses auto scale if we use the default mode which zooms, but can avoid this with --no-crop
+echo "Creating A4 pages for booklet printing..."
 pdfbook2 --no-crop --paper=a4paper tmp-pdfjam.pdf
-open tmp-pdfjam-book.pdf
+#open tmp-pdfjam-book.pdf
+
+echo "Splitting page sets for duplex printing..."
+echo "...odd pages..."
+pdftk tmp-pdfjam-book.pdf cat odd output "$1-odd.pdf"
+open "$1-odd.pdf"
+echo "...even pages (in reverse order)..."
+pdftk tmp-pdfjam-book.pdf cat end-1even output "$1-even-reversed.pdf"
+echo "Done."
 
 # this one works but reencodes at twice the size: pdfcrop --margins '0 0 14 0' --noclip tmp.pdf out.pdf
 

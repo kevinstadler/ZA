@@ -47,12 +47,14 @@ node,way   public_transport text     polygon
 node,way   railway      text         linear
 node,way   ref          text         linear
 node,way	religion	text	polygon
+node,way	route	text	linear
 node,way   service      text         linear
 node,way	shop	text		polygon
 node,way    sport                   text    polygon,nocolumn
 node,way   station      text         linear
 node,way   tourism      text         polygon
 node,way   tunnel       text         linear
+node,way   type         text         linear
 node,way   water        text         polygon
 node,way   waterway     text         polygon
 node,way   wetland      text         polygon
