@@ -10,6 +10,7 @@ import os
 #./adddata.py --bbox -3.2315 55.9265 -3.1548 55.9582 -- data/Edinburgh.osm.pbf
 
 parser = argparse.ArgumentParser(description='Add (and post-process) data to an OSM PostGIS database')
+parser.add_argument('--user', default='za')
 parser.add_argument('--db', default='za')
 parser.add_argument('--style', default='za.style')
 parser.add_argument('--simplify', type=float, default=4.0)
@@ -21,7 +22,7 @@ parser.add_argument('osmfile', nargs='*')
 args = parser.parse_args()
 
 try:
-  conn = psycopg2.connect(host="localhost", database=args.db)
+  conn = psycopg2.connect(host="localhost", user=args.user, database=args.db)
   cur = conn.cursor()
 
   def execute(text, cmd):
@@ -38,7 +39,7 @@ try:
   cur.execute("SELECT 1 FROM information_schema.tables WHERE table_name = '_point'")
   append = '' if cur.fetchone() == None else '--append'
 
-  cmd = f"osm2pgsql --database {args.db} --prefix '' --slim --latlong --style {args.style} --multi-geometry {append} "
+  cmd = f"osm2pgsql -U {args.user} --database {args.db} --prefix '' --slim --latlong --style {args.style} --multi-geometry {append} "
   # --append can only be used with slim mode (so don't --drop!)
 
   if args.bbox == None:
@@ -172,7 +173,7 @@ try:
   execute("Dropping point 'place's if they are within a 'place'-area with the same name",
     "DELETE FROM _point p USING _polygon a WHERE p.place IS NOT NULL AND p.place = a.place AND p.name = a.name AND ST_Intersects(ST_Buffer(geography(p.way), 100), a.way);")
 
-  execute("Remove ; from line and polygon names",
+  execute("Removing ; from line and polygon names",
     """UPDATE _polygon SET name = SUBSTRING(name FOR POSITION(';' IN name) - 1) WHERE name IS NOT NULL AND POSITION(';' IN name) > 0;
     UPDATE _line SET ref = SUBSTRING(ref FOR POSITION(';' IN ref) - 1) WHERE ref IS NOT NULL AND POSITION(';' IN ref) > 0;""")
 
