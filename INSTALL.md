@@ -3,43 +3,36 @@
 ### pgsql/PostGIS setup
 
 ```
+# should install postgresql 12 as a dependency
 sudo apt install postgis
+#might need: echo "listen_addresses = '*'" > /etc/postgresql/12/main/postgresql.conf
 
-echo "listen_addresses = '*'" > /etc/postgresql/12/main/postgresql.conf
-
-echo "local   all             all                                     trust
-host    all             all             127.0.0.1/32            trust
-host    all             all             ::1/128                 trust
-hostnossl    all          all            0.0.0.0/0  trust" > /etc/postgresql/12/main/pg_hba.conf
-
-# WSL sucks so here we go
-sudo service postgresql start
-
-sudo -u postgres createuser -s za
-```
-
-### populate the database
-
-```
-# install dependencies
+# dependencies for adddata.py
 sudo apt install osm2pgsql
 pip install psycopg2-binary
 ```
 
+### per-database setup
+
 ```
 cd db
-./createdb.sh dbnamejustforthatfile
+./createdb.sh dbname
+# automatically starts the database and adds a user 'za'
+
+# populate the database
 ./adddata.py SOMEFILE.osm.pbf
+
+./db.sh dbname start/stop
 ```
 
-WSL sucks pt.2: run `db/wsl.sh` on every boot to fix its IP to 10.10.10.1 (for connecting from QGIS run in Windows)
+The bottleneck for all database operations is disk IO, so best to call adddata.py using the most compact format (e.g. OSM PBF). Best/fastest source for extracts: https://extract.bbbike.org
 
 ## Fonts
 
 * Avenir Next Condensed Regular (https://gitlab.com/jeichert/fonts/-/blob/master/Avenir%20Next%20Condensed/AvenirNextCondensed-Regular.ttf)
 * DIN Condensed
 * .SF NS Text
-* Assistant (Place+Station labels) (https://www.1001fonts.com/assistant-font.html)
+* Assistant (Place+Station labels)
 
 ```
 
