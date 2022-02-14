@@ -3,7 +3,7 @@ if [ -d "db$1" ]; then
   echo "DB already exists?"
   exit 1
 fi
-#sudo -u postgres pg_createcluster --encoding=utf8 --start --port=5432 12 db$1 -- --auth=trust
+sudo -u postgres pg_createcluster --encoding=utf8 --start --port=5432 12 db$1 -- --auth=trust
 
 DBNAME=za
 createdb -U postgres $DBNAME

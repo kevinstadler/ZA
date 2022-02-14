@@ -3,6 +3,7 @@
 import argparse
 import psycopg2
 import os
+import time
 
 # small cutouts:
 #./adddata.py --bbox 102.66 25.033 102.73 25.085 -- data/Kunming.osm.pbf
@@ -25,11 +26,15 @@ try:
   conn = psycopg2.connect(host="localhost", user=args.user, database=args.db)
   cur = conn.cursor()
 
-  def execute(text, cmd):
+  def execute(text, cmd, commit = False):
     print(text)
+    t = time.time()
     cur.execute(cmd)
-    print(f"{cur.rowcount} rows affected\n")
-    conn.commit()
+    print(f"{cur.rowcount} rows affected in {time.time() - t}s\n")
+    if commit:
+      t = time.time()
+      conn.commit()
+      print(f"Commit took {time.time() - t}s\n")
     return cur.rowcount
 
   def getcount(query, asstr = True):
@@ -60,7 +65,7 @@ try:
   schema = cur.fetchone()
   if schema == None:
     print("First time populating database, adding custom length/area columns")
-    cur.execute("""ALTER TABLE _polygon ADD area INTEGER;
+    cur.execute("""ALTER TABLE _polygon ADD area BIGINT;
       ALTER TABLE _polygon ADD simplified geometry(Geometry,4326);
       ALTER TABLE _polygon ADD simplified2 geometry(Geometry,4326);
       CREATE INDEX _polygon_simplified_idx ON _polygon USING GIST(simplified);

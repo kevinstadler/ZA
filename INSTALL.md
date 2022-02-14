@@ -10,6 +10,9 @@ sudo apt install postgis
 # dependencies for adddata.py
 sudo apt install osm2pgsql
 pip install psycopg2-binary
+
+# dependencies for layout.py
+pip install pyproj
 ```
 
 ### per-database setup
@@ -25,7 +28,16 @@ cd db
 ./db.sh dbname start/stop
 ```
 
-The bottleneck for all database operations is disk IO, so best to call adddata.py using the most compact format (e.g. OSM PBF). Best/fastest source for extracts: https://extract.bbbike.org
+### data sources
+
+* OSM data
+  * The bottleneck for all database operations is disk IO, so best to call adddata.py using the most compact format (e.g. OSM PBF). Best/fastest source for extracts: https://extract.bbbike.org
+* Coastline/sea water polygons
+  * https://osmdata.openstreetmap.de/data/water-polygons.html
+
+
+sudo apt install gdal-bin
+
 
 ## Fonts
 

@@ -13,7 +13,7 @@ case "$1" in
   stop)
     sudo pg_ctlcluster 12 db$2 $1
     ;;
-  stop)
-    sudo pg_dropcluster --stop 12 db$1
+  drop)
+    sudo pg_dropcluster --stop 12 db$2
     ;;
 esac
