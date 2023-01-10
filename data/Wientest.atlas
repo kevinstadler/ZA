@@ -1,0 +1,14 @@
+[map]
+center: [16.32992, 48.23328]
+# MGI Ferro Austria GK East Zone
+proj: epsg:31253
+scale: 17500
+baselinescale: 17500
+# A4 but 1cm less wide (than the full 29.7cm) so gutter can be added
+papersize: [287, 210]
+printareasize: [253.5, 197]
+bleed: 3
+
+[pages]
+-1: 0
+0: -1-0

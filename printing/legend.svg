@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="legend.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 00 1055 1275"
+   height="127.5mm"
+   width="105.5mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient1213">
+      <stop
+         id="stop1211"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1074">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1070" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1072" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1074"
+       id="linearGradient1076"
+       x1="185.291"
+       y1="113.29924"
+       x2="355.1509"
+       y2="113.29924"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="908"
+     inkscape:window-width="1793"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="110.44997"
+     inkscape:cx="286.61605"
+     inkscape:zoom="4.6609645"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <!-- 3 left -->
+    <path
+       id="fatblueline1left"
+       d="M 0,67 505,67 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="fatblueline"
+       d="M 0,112 505,112 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="fatblueline1"
+       d="M 0,160 505,160 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <!-- right -->
+    <path
+       id="fatblueline1right"
+       d="M 550,67 1055,67 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path21"
+       d="M 550,160 1055,160 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <!-- before reference -->
+    <path
+       id="fatblueline2left"
+       d="M 0,209 505,209 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="fatblueline2right"
+       d="M 550,209 1055,209 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <!-- after reference: left -->
+    <path
+       id="fatblueline3left"
+       d="M 0,280 505,280 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="motorwayaroadline"
+       d="M 0,347 505,347 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="aroadbroadline"
+       d="M 0,510 505,510 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="broaddualline"
+       d="M 0,553 505,553 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="onewayline"
+       d="M 0,617 505,617 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="junctionline"
+       d="M 0,700 505,700 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="restrictedaccessline"
+       d="M 0,767 505,767 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path32"
+       d="M 0,812 505,812 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path34"
+       d="M 0,857 505,857 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path36"
+       d="M 0,899 505,899 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path38"
+       d="M 0,938 505,938 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path40"
+       d="M 0,1015 505,1015 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path42"
+       d="M 0,1065 505,1065 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path44"
+       d="M 0,1110 505,1110 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path46"
+       d="M 0,1154 505,1154 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path48"
+       d="M 0,1210 505,1210 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <!-- after reference: right -->
+    <path
+       id="fatblueline3right"
+       d="M 550,280 1055,280 Z"
+       style="fill:none;stroke:#308ade;stroke-width:3.53;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="carpark"
+       d="M 550,364 1055,364 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="chapel"
+       d="M 550,406 1055,406 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="cycle"
+       d="M 550,448 1055,448 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="cycleway"
+       d="M 935,469 1055,469"
+       style="fill:none;stroke:#ff0000;stroke-width:6;stroke-linecap:round;stroke-linejoin:rounded;stroke-opacity:.34;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:0,18" />
+    <path
+       id="fire"
+       d="M 550,490 1055,490 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="hospital"
+       d="M 550,530 1055,530 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="prehousenumbers"
+       d="M 550,570 1055,570 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryA"
+       d="M 925,599.5 990,599.5"
+       style="fill:none;stroke:#000000;stroke-width:38;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAinner"
+       d="M 925,599.5 990,599.5"
+       style="fill:none;stroke:#ffaa00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryB"
+       d="M 990,599.5 1055,599.5"
+       style="fill:none;stroke:#000000;stroke-width:23;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryBinner"
+       d="M 990,599.5 1055,599.5"
+       style="fill:none;stroke:#ffff00;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="posthousenumbers"
+       d="M 550,629 1055,629 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="postinfo"
+       d="M 550,670 1055,670 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="postgrid"
+       d="M 550,711 1055,711 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="postpolice"
+       d="M 550,752 1055,752 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="toilet"
+       d="M 550,793 1055,793 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="viewpoint"
+       d="M 550,868 1055,868 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="eduarea"
+       d="M 550,913 1055,913 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path65"
+       d="M 550,958 1055,958 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="eduarea2"
+       d="M 550,1003 1055,1003 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path68"
+       d="M 550,1048 1055,1048 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path70"
+       d="M 550,1093 1055,1093 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path72"
+       d="M 550,1138 1055,1138 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path74"
+       d="M 550,1183 1055,1183 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path76"
+       d="M 550,1228 1055,1228 Z"
+       style="fill:none;stroke:#308ade;stroke-width:1.16;stroke-linecap:butt;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <!-- FILLED AREAS -->
+    <path
+       d="M 1035,920 1035,947 1020,947 1020,935 995,935 995,920 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="path78"
+       style="fill:#ff8800;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,965 1035,992 1020,992 1020,980 995,980 995,965 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="hospitalhospica"
+       style="fill:#7cb074;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1010 1035,1037 1020,1037 1020,1025 995,1025 995,1010 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="industrial"
+       style="fill:#bbbbbb;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1055 1035,1082 1020,1082 1020,1070 995,1070 995,1055 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="leisure"
+       style="fill:#daa14b;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1100 1035,1127 1020,1127 1020,1115 995,1115 995,1100 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="poi"
+       style="fill:#e299a0;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1145 1035,1172 1020,1172 1020,1160 995,1160 995,1145 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="public"
+       style="fill:#A2AEEB;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1190 1035,1217 1020,1217 1020,1205 995,1205 995,1190 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="shopping"
+       style="fill:#b293cb;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 1035,1235 1035,1262 1020,1262 1020,1250 995,1250 995,1235 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       id="other"
+       style="fill:#ffff00;stroke:#000000;stroke-width:1.40693133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="motorouter"
+       d="M 370,313 500,313"
+       style="fill:none;stroke:#000000;stroke-width:46;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="motorblue"
+       d="M 370,313 500,313"
+       style="fill:none;stroke:#A4B9EE;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="motorinner"
+       d="M 370,313 500,313"
+       style="fill:none;stroke:#000000;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="motorinnerwhite"
+       d="M 370,313 500,313"
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primary"
+       d="M 370,380 500,380"
+       style="fill:none;stroke:#000000;stroke-width:38;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path2300"
+       d="M 370,380 500,380"
+       style="fill:none;stroke:#ffaa00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAconst"
+       d="M 370,430 500,430"
+       style="fill:none;stroke:#000000;stroke-width:38;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAconstinner"
+       d="M 370,430 500,430"
+       style="fill:none;stroke:#ffffff;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAconstinnerdash"
+       d="M 370,430 500,430"
+       style="fill:none;stroke:#ffaa00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:12,30,40,30,40" />
+    <path
+       id="primaryAproposed"
+       d="M 370,480 500,480"
+       style="fill:none;stroke:#ffaa00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:12,30,40,30,40" />
+    <path
+       id="path87"
+       d="M 370,530 500,530"
+       style="fill:none;stroke:#000000;stroke-width:23;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path89"
+       d="M 370,530 500,530"
+       style="fill:none;stroke:#ffff00;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAdual"
+       d="M 370,585 410.3,585"
+       style="fill:none;stroke:#000000;stroke-width:38;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryAdualinner"
+       d="M 370,585 410.3,585"
+       style="fill:none;stroke:#ffaa00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryBdual"
+       d="M 410.3,585 453.6,585"
+       style="fill:none;stroke:#000000;stroke-width:26;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="primaryBdualinner"
+       d="M 410.3,585 453.6,585"
+       style="fill:none;stroke:#ffff00;stroke-width:24.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="miscdual"
+       d="M 453.6,585 500,585"
+       style="fill:none;stroke:#000000;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="miscdualinner"
+       d="M 453.6,585 500,585"
+       style="fill:none;stroke:#ffffff;stroke-width:19.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="dualcarriageline"
+       d="M 370,585 500,585"
+       style="fill:none;stroke:#000000;stroke-width:.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="misconeway"
+       d="M 370,637 500,637"
+       style="fill:none;stroke:#000000;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="misconewayinner"
+       d="M 370,637 500,637"
+       style="fill:none;stroke:#ffffff;stroke-width:19.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path106"
+       d="M 370,675 500,675"
+       style="fill:none;stroke:#000000;stroke-width:32.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path108"
+       d="M 370,673.9 500,673.9"
+       style="fill:none;stroke:#ffaa00;stroke-width:29;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="restricted"
+       d="M 370,792 500,792"
+       style="fill:none;stroke:#000000;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="restrictedinner"
+       d="M 370,792 500,792"
+       style="fill:none;stroke:#c8a8e2;stroke-width:19.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="pedestrian"
+       d="M 370,836 500,836"
+       style="fill:none;stroke:#000000;stroke-width:21;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="pedestrianinner"
+       d="M 370,836 500,836"
+       style="fill:none;stroke:#ffacac;stroke-width:19.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="trackupper"
+       d="M 370,874 435,874"
+       style="fill:none;stroke:#000000;stroke-width:.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:8,3" />
+    <path
+       id="tracklower"
+       d="M 370,884 435,884"
+       style="fill:none;stroke:#000000;stroke-width:.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:8,3" />
+    <path
+       id="footpath"
+       d="M 435,879 500,879"
+       style="fill:none;stroke:#000000;stroke-width:.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:8,3" />
+    <path
+       id="steps"
+       d="M 370,920 500,920"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:rounded;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:0,8" />
+    <path
+       id="raillinestroke"
+       d="M 265,980 370,980"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="raillinedash"
+       d="M 400,980 500,980"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:22,5" />
+    <path
+       id="localauthority"
+       d="M 370,1088 500,1088"
+       style="fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:.6;stroke-miterlimit:4;stroke-dasharray:25,10,6,10" />
+    <path
+       id="posttown"
+       d="M 370,1132 500,1132"
+       style="fill:none;stroke:#308adf;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:.6;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="postcode"
+       d="M 370,1184 500,1184"
+       style="fill:none;stroke:#308adf;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:.6;stroke-miterlimit:4;stroke-dasharray:15,10,29,10,29,10,29" />
+    <rect
+       style="fill:#ffddad;fill-opacity:1;stroke:none;"
+       id="residential"
+       width="90"
+       height="40"
+       x="389"
+       y="1222" />
+    <rect
+       style="fill:#308ade;fill-opacity:1;stroke:none;"
+       id="rect1078"
+       width="60"
+       height="38"
+       x="275"
+       y="295" />
+    <rect
+       style="fill:#308ade;fill-opacity:1;stroke:none"
+       id="bluecontinuation"
+       width="65"
+       height="32"
+       x="787.58337"
+       y="320" />
+    <polygon
+       points="809.5,292 777,312 842,312 "
+       id="bluecontinuationtriangle"
+       style="fill:#308ade;fill-opacity:1;stroke:none;stroke-width:1"
+       transform="translate(10.583333)" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;"
+       id="redcontinuation"
+       width="65"
+       height="32"
+       x="982"
+       y="320" />
+    <polygon
+       points="982,312 1047,312 1014.5,292"
+       id="redcontinuationtriangle"
+       style="fill:#ff0000;stroke:none;stroke-width:1;fill-opacity:1" />
+    <rect
+       style="fill:#308ade;fill-opacity:1;stroke:none;"
+       id="parking"
+       width="17"
+       height="17"
+       x="1006"
+       y="375" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;"
+       id="firestation"
+       width="15"
+       height="15"
+       x="1007"
+       y="502" />
+    <circle
+       cx="1014.5"
+       cy="551"
+       r="13"
+       id="circle2340"
+       style="fill:#308ade;fill-opacity:1;stroke:none;" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:18px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1008"
+       y="557"
+       id="hospitalH">H</text>
+    <rect
+       style="fill:#308ade;fill-opacity:1;stroke:none;"
+       id="info"
+       width="20"
+       height="20"
+       x="1007"
+       y="640" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:18px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1015"
+       y="657"
+       id="infoI">i</text>
+    <polygon
+       points="1007,740 1027,740 1017,720"
+       id="policestation"
+       style="fill:#308ade;stroke:none;stroke-width:1;fill-opacity:1" />
+    <image
+       sodipodi:absref="/Users/kevin/ZA/postoffice.svg"
+       xlink:href="postoffice.svg"
+       x="1005"
+       y="759"
+       preserveAspectRatio="xMidYMid"
+       width="26"
+       height="26"
+       id="postoffice"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <polygon
+       points="1007,805 1027,805 1017,825"
+       id="toilet1"
+       style="fill:#000000;stroke:none;stroke-width:1;fill-opacity:1" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;"
+       id="toilet2"
+       width="20"
+       height="20"
+       x="1007"
+       y="835" />
+    <text
+       id="text143"
+       y="397.63095"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       xml:space="preserve"><tspan
+         y="397.63095"
+         x="1"
+         id="tspan157"
+         sodipodi:role="line">A Road</tspan></text>
+    <text
+       id="text2352"
+       y="437.31845"
+       x="10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       xml:space="preserve"><tspan
+         y="437.31845"
+         x="10"
+         id="tspan159"
+         sodipodi:role="line">Under Construction</tspan></text>
+    <text
+       id="text2355"
+       y="477.00595"
+       x="10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       xml:space="preserve"><tspan
+         y="477.00595"
+         x="10"
+         id="tspan161"
+         sodipodi:role="line">Proposed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="540.32465"
+       id="text143-4"><tspan
+   style="stroke-width:2.64583"
+   sodipodi:role="line"
+   id="tspan157-7"
+   x="1"
+   y="540.32465">B Road</tspan>
+         </text>
+    <text
+       id="text143-4-1"
+       y="594.85901"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="594.85901"
+         x="1"
+         id="tspan161-1-4"
+         sodipodi:role="line"
+         style="stroke-width:2.64583">Dual Carriageway</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="652.63422"
+       id="text143-4-1-8"><tspan
+         id="tspan230"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="652.63422">One Way Street</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="675"
+       id="text143-4-1-8asdasd"><tspan
+         id="tspan230asdasd"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="675">Traffic flow on A Roads is also indicated</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="688"
+       id="text403"><tspan
+         id="tspan401"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="688">by a heavy line on the driver's right.</tspan></text>
+    <text
+       id="text143-4-1-8-1"
+       y="746.95612"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="746.95612"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5">Junction Name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'Zurich BT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="322.32306"
+       id="text143-4-1-8-1-4"><tspan
+         id="tspan230-5-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';-inkscape-font-specification:'Zurich BT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="322.32306">Motorway</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-6"
+       y="322.65289"
+       x="283.64844"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64574"
+       xml:space="preserve"><tspan
+         y="322.65289"
+         x="283.64844"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:2.64574"
+         id="tspan230-5-0-5">M8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="2.2438982"
+       y="798.57324"
+       id="text143-4-1-8-1-48"><tspan
+         id="tspan1133"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="798.57324">Restricted Access</tspan></text>
+    <text
+       id="text143-4-1-8-1-48-5"
+       y="846.59216"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="846.59216"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan1133-5">Pedestrianised Road</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="888.16846"
+       id="text143-4-1-8-1-48-5-4"><tspan
+         id="tspan1133-5-1"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="888.16846">Track/Footpath</tspan></text>
+    <text
+       id="text143-4-1-8-1-48-5-4-9"
+       y="929.38934"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="929.38934"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan1133-5-1-0">Residential Walkway</tspan></text>
+    <text
+       id="text143-4-1-8-1-48-5-4-3"
+       y="985.32922"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="985.32922"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan1133-5-1-3">Railway</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="1050"
+       id="text143-4-1-8-1-48-5-4-3-4">Underground Station</text>
+    <circle
+       cx="440"
+       cy="1040"
+       r="14.25"
+       style="fill:#ffffff;stroke: #ff0000;stroke-width:1.5;"
+       id="circle2380" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:20px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="432.8"
+       y="1047.5"
+       id="UndergroundU">U</text>
+    <text
+       id="text143-4-1-8-1-48-5-4-3-4-3"
+       y="1097.1337"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="1097.1337"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan1133-5-1-3-9-5">Local Authority Boundary</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="1141.8107"
+       id="text143-4-1-8-1-48-5-4-3-4-3-4"><tspan
+         id="tspan1133-5-1-3-9-5-7"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="1141.8107">Posttown Boundary</tspan></text>
+    <text
+       id="text143-4-1-8-1-48-5-4-3-4-3-4-7"
+       y="1194.7272"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="1194.7272"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan1133-5-1-3-9-5-7-4">Postcode Boundary</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="1251.4241"
+       id="text143-4-1-8-1-48-5-4-3-4-3-4-7-1"><tspan
+         id="tspan1133-5-1-3-9-5-7-4-3"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="1251.4241">Built-up Area</tspan></text>
+    <image
+       sodipodi:absref="/Users/kevin/ZA/icons/rail.svg"
+       xlink:href="icons/rail.svg"
+       x="360"
+       y="967"
+       preserveAspectRatio="xMidYMid"
+       width="40"
+       height="25.033113"
+       id="image1557"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text143-4-1-8-1-4-4"
+       y="100"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="100"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1">Key to Map Pages</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4asdasd"
+       y="100"
+       x="470"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="100"
+         x="470"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan2394">2-3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="1"
+       y="142.87404"
+       id="text143-4-1-8-1-4-4-5"><tspan
+         id="tspan230-5-0-1-0"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="1"
+         y="145">Large Scale City Centre</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="470"
+       y="145"
+       id="text143-4-1-8-1-4-4-5asdasd"><tspan
+         id="tspan2399"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="470"
+         y="145">4-5</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1"
+       y="192.25902"
+       x="1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="192.25902"
+         x="1"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1">Map Pages</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1asdasdasd"
+       y="192.2636"
+       x="441.83203"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="192.2636"
+         x="441.83203"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan2404">6-213</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:0.75;font-family:'Zurich Lt BT';-inkscape-font-specification:'Zurich BT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       x="550"
+       y="98.80856"
+       id="text143-4-1-8-1-4-4-0"><tspan
+         id="tspan230-5-0-1-8"
+         style="stroke-width:2.64583;-inkscape-font-specification:'Zurich BT, Normal';font-family:'Zurich Lt BT';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:26px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
+         sodipodi:role="line"
+         x="550"
+         y="98.80856">Index to Streets, Towns, Villages,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:0.75;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="124.08644"
+       id="text2410"><tspan
+         id="tspan3492"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="124.08644">selected Places of Interest and</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:0.75;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="153.36432"
+       id="text2413"><tspan
+         id="tspan3494"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="153.36432">Stations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="960"
+       y="124.08644"
+       id="text143-4-1-8-1-4-4-5-1-4"><tspan
+         id="tspan230-5-0-1-0-1-7"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="960"
+         y="124.08644">214-302</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="196.526"
+       id="text2419"><tspan
+         id="tspan2417"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="192.25902">Index to Hospitals &amp; Hospices</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="960"
+       y="192.25902"
+       id="text2423"><tspan
+         id="tspan2421"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="960"
+         y="192.25902">303-304</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5"
+       y="334.45374"
+       x="549.1593"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';-inkscape-font-specification:'Zurich Lt BT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       xml:space="preserve"><tspan
+         y="334.45374"
+         x="549.1593"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';-inkscape-font-specification:'Zurich Lt BT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583;"
+         id="tspan230-5-0-1-0-1-7-6">Map Continuation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="861.53107"
+       y="319.81509"
+       id="text143-4-1-8-1-4-4-5-1-4-5-6"><tspan
+         id="tspan230-5-0-1-0-1-7-6-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         sodipodi:role="line"
+         x="861.53107"
+         y="319.81509">Large Scale</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="861.53107"
+       y="341.86371"
+       id="text2430"><tspan
+         id="tspan3550"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         sodipodi:role="line"
+         x="861.53107"
+         y="341.86371">City Centre</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="396.92215"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="396.92215">Car Park</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3"
+       y="438.37637"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="438.37637"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0">Church or Chapel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="478.08447"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="478.08447">Cycle Route</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3"
+       y="521.17407"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="521.17407"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7">Fire Station</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="559.80951"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="559.80951">Hospital</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5"
+       y="605.84094"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="605.84094"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3">House Numbers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-stretch:condensed;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       x="550"
+       y="659.87091"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3"
+         style="stroke-width:2.64583;-inkscape-font-specification:'Avenir Next Condensed, Medium Condensed';font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;font-size:26px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
+         sodipodi:role="line"
+         x="550"
+         y="659.87091">Information Centre</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0"
+       y="701"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="701"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8">National Grid Reference</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="744.60645"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="744.60645">Police Station</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6"
+       y="783"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.3"
+       xml:space="preserve"><tspan
+         y="783"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:1.3"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6">Post Office</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="900"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="900">Viewpoint</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7"
+       y="946.38275"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="946.38275"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9">Educational Establishment</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="994.00183"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7"
+         style="stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="994.00183">Hospital or Hospice</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9"
+       y="1038.2456"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="1038.2456"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7">Industrial Building</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       x="550"
+       y="1080.5028"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9-8"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7-5"
+         style="stroke-width:2.64583;-inkscape-font-specification:'sans-serif, Normal';font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;font-style:normal;font-variant:normal;font-size:26px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
+         sodipodi:role="line"
+         x="550"
+         y="1080.5028">Leisure or Recreational Facility</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9-8-6"
+       y="1124.1943"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="1124.1943"
+         x="550"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7-5-3">Place of Interest</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="1168.885"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9-8-6-5"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7-5-3-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="1168.885">Public Building</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9-8-6-5-0"
+       y="1213.3303"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="1213.3303"
+         x="550"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7-5-3-0-8">Shopping Centre or Market</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       x="550"
+       y="1257.1757"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-7-9-9-8-6-5-0-1"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-9-7-7-5-3-0-8-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.64583"
+         sodipodi:role="line"
+         x="550"
+         y="1257.1757">Other Selected Buildings</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-5"
+       y="823.91797"
+       x="550"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+       xml:space="preserve"><tspan
+         y="823.91797"
+         x="550"
+         sodipodi:role="line"
+         style="stroke-width:2.64583"
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-5">Toilet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.16669999999999874px;line-height:1.25;font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;"
+       x="570"
+       y="855"
+       id="text143-4-1-8-1-4-4-5-1-4-5-9-3-8-3-5-5-0-0-5-6-9-5-4"><tspan
+         id="tspan230-5-0-1-0-1-7-6-2-0-7-7-1-3-3-8-7-6-9-5-4"
+         style="stroke-width:2.64583;-inkscape-font-specification:'sans-serif, Normal';font-family:'Zurich Lt BT';font-style:normal;font-stretch:condensed;font-variant:normal;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:22px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
+         sodipodi:role="line"
+         x="570"
+         y="855">with facilities for the Disabled</tspan></text>
+    <text
+       transform="scale(1.0000664,0.9999336)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64574"
+       x="804.55457"
+       y="345.845"
+       id="text143-4-1-8-1-4-6-7"><tspan
+         id="tspan230-5-0-5-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:2.64574"
+         sodipodi:role="line"
+         x="804.55457"
+         y="345.845">86</tspan></text>
+    <text
+       id="text143-4-1-8-1-4-6-7-0"
+       y="344.5"
+       x="1005"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64574"
+       xml:space="preserve"><tspan
+         y="344.5"
+         x="1006"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.9991px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:2.64574"
+         id="tspan230-5-0-5-9-2">4</tspan></text>
+  </g>
+</svg>

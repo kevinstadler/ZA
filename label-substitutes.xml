@@ -1,0 +1,18 @@
+<substitutions version="1.0">
+    <replacement caseSensitive="0" match="Avenue" wholeWord="1" replace="Av"/>
+    <replacement caseSensitive="0" match="Street" wholeWord="1" replace="St"/>
+    <replacement caseSensitive="0" match="Road" wholeWord="1" replace="Rd"/>
+    <replacement caseSensitive="0" match="Park" wholeWord="1" replace="Pk"/>
+    <replacement caseSensitive="0" match="Crescent" wholeWord="1" replace="Cr"/>
+    <replacement caseSensitive="0" match="Drive" wholeWord="1" replace="Dr"/>
+    <replacement caseSensitive="0" match="Boulevard" wholeWord="1" replace="Blv"/>
+    <replacement caseSensitive="0" match="Square" wholeWord="1" replace="Sq"/>
+    <replacement caseSensitive="0" match="Gardens" wholeWord="1" replace="Gdns"/>
+    <replacement caseSensitive="0" match="Garden" wholeWord="1" replace="Gdn"/>
+    <replacement caseSensitive="0" match="Place" wholeWord="1" replace="Pl"/>
+    <replacement caseSensitive="0" match="Gate" wholeWord="1" replace="Gt"/>
+    <replacement caseSensitive="0" match="Heights" wholeWord="1" replace="Hts"/>
+    <replacement caseSensitive="0" match="Lane" wholeWord="1" replace="Ln"/>
+    <replacement caseSensitive="0" match="Terrace" wholeWord="1" replace="Terr"/>
+    <replacement caseSensitive="0" match="Quadrant" wholeWord="1" replace=""/>
+</substitutions>

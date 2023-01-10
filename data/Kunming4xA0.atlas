@@ -1,0 +1,24 @@
+[map]
+proj: esri:102030
+grid: false
+border: false
+dpi: 300
+rotation: 45
+
+;; 4x A0 landscape
+papersize: [841, 1189]
+center: [102.675, 25.03]
+magnification: .9
+scale: 25000
+[pages]
+0: 0-1
+-1: 0-1
+
+;; 6x A0 portrait
+;papersize: [1189, 841]
+;center: [102.635, 25.025]
+;scale: 22500
+;[pages]
+;0: 0-1
+;-1: 0-1
+;-2: 0-1

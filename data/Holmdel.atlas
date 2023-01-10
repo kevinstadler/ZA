@@ -1,0 +1,17 @@
+[map]
+center: [-74.2044, 40.3677]
+proj: esri:102004
+scale: 22000
+baselinescale: 20000
+papersize: [287, 210]
+printareasize: [253.5, 197]
+bleed: 3
+
+[pages]
+-3: -4-4
+-2: -4-4
+-1: -4-4
+0: -4-4
+1: -4-4
+2: -4-4
+3: -4-4
